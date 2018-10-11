@@ -1,0 +1,19 @@
+server:
+  port: 8484
+
+logging:
+    level:
+        ROOT: INFO
+        br.com.cielo.stb: INFO
+spring:
+   devtools:
+       restart:
+           enabled: true
+       livereload:
+           enabled: false
+   datasource:
+       driver-class-name: oracle.jdbc.driver.OracleDriver
+       username: system
+       password: oracle
+       platform: oracle
+       url: jdbc:oracle:thin:@10.55.2.27:49161:xe
